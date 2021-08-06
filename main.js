@@ -6,6 +6,7 @@ try
 {
 	const stripperPath = core.getInput("stripper-path");
 	const filenames = fs.readdirSync(stripperPath);
+	let passCount = 0;
 	let failCount = 0;
 
 	console.log("Verifying all stripper configs are lower case...");
@@ -16,12 +17,16 @@ try
 			failCount++;
 			console.log(`${file} is not in lower case`);
 		}
+		else
+		{
+			passCount++;
+		}
 	});
 
 	if (failCount === 0)
-		console.log("All stripper config filenames successfully verified as lower case!");
+		console.log(`${passCount} stripper config filename${passCount > 1 ? "s" : ""} successfully verified as lower case!`);
 	else
-		core.setFailed(`${failCount} stripper config filenames failed the lower case check!`);
+		core.setFailed(`${failCount} stripper config filename${failCount > 1 ? "s" : ""} failed the lower case check!`);
 }
 catch (error)
 {

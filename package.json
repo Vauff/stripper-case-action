@@ -1,6 +1,6 @@
 {
   "name": "stripper-case-action",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Verifies that stripper filenames are all lowercase",
   "main": "main.js",
   "scripts": {
