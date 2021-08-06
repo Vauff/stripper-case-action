@@ -14,16 +14,16 @@ try
 		if (file.toLowerCase() !== file)
 		{
 			failCount++;
-			console.log("ERROR: ${file} is not in lower case");
+			console.log(`${file} is not in lower case`);
 		}
 	});
 
 	if (failCount === 0)
 		console.log("All stripper config filenames successfully verified as lower case!");
 	else
-		core.setFailed("${failCount} stripper config filenames failed the lower case check!");
+		core.setFailed(`${failCount} stripper config filenames failed the lower case check!`);
 }
 catch (error)
 {
-	core.setFailed("An unexpected error occured: ${error.message}");
+	core.setFailed(`An unexpected error occured: ${error.message}`);
 }
