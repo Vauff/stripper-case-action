@@ -1,0 +1,9 @@
+name: 'stripper-case-action'
+description: 'Verifies that stripper filenames are all lowercase'
+inputs:
+  stripper-path:
+    description: 'Path to stripper configs'
+    required: true
+runs:
+  using: 'node12'
+  main: 'main.js'
