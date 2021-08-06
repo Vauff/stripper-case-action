@@ -1,13 +1,13 @@
 {
   "name": "stripper-case-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Verifies that stripper filenames are all lowercase",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vauff",
   "license": "GPL-3.0",
   "dependencies": {
     "@actions/core": "^1.4.0",
