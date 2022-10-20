@@ -5,5 +5,5 @@ inputs:
     description: 'Path to stripper configs'
     required: true
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'main.js'
